@@ -227,6 +227,7 @@ GameObject:
   - component: {fileID: 589640340}
   - component: {fileID: 589640339}
   - component: {fileID: 589640338}
+  - component: {fileID: 589640341}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -293,12 +294,27 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 589640337}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 13.3, y: -7.1, z: -10}
+  m_LocalPosition: {x: 13.3, y: -7, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &589640341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 589640337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b7b86af5eafd6d40850fa1f7f7bac21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1326220273}
+  minConstraints: {x: 13.3, y: -7}
+  maxConstraints: {x: 39.7, y: -46}
 --- !u!1 &1137732023
 GameObject:
   m_ObjectHideFlags: 0
@@ -356,6 +372,7 @@ GameObject:
   - component: {fileID: 1233675568}
   - component: {fileID: 1233675567}
   - component: {fileID: 1233675569}
+  - component: {fileID: 1233675570}
   m_Layer: 0
   m_Name: Black Map
   m_TagString: Untagged
@@ -30758,6 +30775,20 @@ TilemapCollider2D:
   m_Offset: {x: 0, y: 0}
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0.00001
+--- !u!114 &1233675570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1233675565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8efac28a370316446ad332e4c50f4e30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startActive: 0
+  key: 32
 --- !u!1 &1326220273
 GameObject:
   m_ObjectHideFlags: 0
@@ -30838,7 +30869,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1326220273}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 19, y: -6.99, z: -1}
+  m_LocalPosition: {x: 0.97, y: -0.93, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -30906,6 +30937,7 @@ GameObject:
   - component: {fileID: 1646894744}
   - component: {fileID: 1646894743}
   - component: {fileID: 1646894745}
+  - component: {fileID: 1646894746}
   m_Layer: 0
   m_Name: White Map
   m_TagString: Untagged
@@ -48488,13 +48520,13 @@ Tilemap:
   - first: {x: 44, y: -23, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 13
+      m_TileIndex: 0
       m_TileSpriteIndex: 0
       m_TileMatrixIndex: 0
-      m_TileColorIndex: 2
+      m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
-      m_AllTileFlags: 2147483649
+      m_AllTileFlags: 1
   - first: {x: 45, y: -23, z: 0}
     second:
       serializedVersion: 2
@@ -61237,7 +61269,7 @@ Tilemap:
       m_AllTileFlags: 2147483649
   m_AnimatedTiles: {}
   m_TileAssetArray:
-  - m_RefCount: 1819
+  - m_RefCount: 1820
     m_Data: {fileID: 11400000, guid: d37220ea5db677d42b3a265fcea53310, type: 2}
   - m_RefCount: 0
     m_Data: {fileID: 0}
@@ -61263,7 +61295,7 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 1206
+  - m_RefCount: 1205
     m_Data: {fileID: 11400000, guid: f83fd168b7bba524cbd47455ee3912ab, type: 2}
   m_TileSpriteArray:
   - m_RefCount: 3025
@@ -61312,11 +61344,11 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 1819
+  - m_RefCount: 1820
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   - m_RefCount: 0
     m_Data: {r: 6e-45, g: 6e-45, b: 6e-45, a: 6e-45}
-  - m_RefCount: 1206
+  - m_RefCount: 1205
     m_Data: {r: 0, g: 0, b: 0, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
@@ -61358,3 +61390,17 @@ TilemapCollider2D:
   m_Offset: {x: 0, y: 0}
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0.00001
+--- !u!114 &1646894746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1646894741}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8efac28a370316446ad332e4c50f4e30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startActive: 1
+  key: 32
