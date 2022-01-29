@@ -7,16 +7,19 @@ public class PlayerController : MonoBehaviour
     Rigidbody2D body;
 
     [SerializeField] float speed = 1;
+    Animator animator;
 
     void Start()
     {
         body = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
     }
     
     void Update()
     {
-        //body.AddForce(new Vector2(HorizontalInput * speed, VerticalInput * speed));
         body.velocity = new Vector2(HorizontalInput * speed, VerticalInput * speed);
+
+        if (animator != null) animator.SetBool("IsWalking", body.velocity.sqrMagnitude != 0);
     }
 
     float HorizontalInput
