@@ -6,7 +6,7 @@ using UnityEngine.Tilemaps;
 public class EnableTileMap : MonoBehaviour
 {
     [SerializeField] bool startActive;
-    [SerializeField] KeyCode key = KeyCode.Space;
+    //[SerializeField] KeyCode key = KeyCode.Space;
     [SerializeField] float cooldown = 1;
     float cooldownTimer;
 
@@ -27,7 +27,7 @@ public class EnableTileMap : MonoBehaviour
     {
         if (cooldownTimer > 0) cooldownTimer -= Time.deltaTime;
 
-        if (cooldownTimer <= 0 && Input.GetKeyDown(key)) EnableComponents(!isEnabled);
+        if (cooldownTimer <= 0 && Input.GetKeyDown(GameManager.GM.change)) EnableComponents(!isEnabled);
     }
 
     void EnableComponents(bool value)

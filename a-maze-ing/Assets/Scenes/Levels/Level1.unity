@@ -136,7 +136,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6995606656396715724, guid: 563d0c579ebabc14caeec4da026b5376, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6995606656396715731, guid: 563d0c579ebabc14caeec4da026b5376, type: 3}
       propertyPath: m_Pivot.x
@@ -344,9 +344,7 @@ GameObject:
   - component: {fileID: 589640340}
   - component: {fileID: 589640339}
   - component: {fileID: 589640338}
-  - component: {fileID: 589640341}
   - component: {fileID: 917133996}
-  - component: {fileID: 589640342}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -371,8 +369,8 @@ Camera:
   m_GameObject: {fileID: 589640337}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0.3372549, g: 0.8, b: 0.99215686, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -419,30 +417,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &589640341
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 589640337}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &589640342
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 589640337}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8bc30c4f83cc2df4eb71999ec123e7b2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &596214044
 GameObject:
   m_ObjectHideFlags: 0
@@ -728,6 +702,7 @@ GameObject:
   - component: {fileID: 1102281660}
   - component: {fileID: 1102281662}
   - component: {fileID: 1102281661}
+  - component: {fileID: 1102281663}
   m_Layer: 5
   m_Name: Time
   m_TagString: Untagged
@@ -783,8 +758,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4294861205
+  m_fontColor: {r: 0.58431375, g: 0.38039216, b: 0.99607843, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -851,6 +826,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1102281659}
   m_CullTransparentMesh: 1
+--- !u!114 &1102281663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1102281659}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54ba2c01c2f421f45a1c19d3d5831af1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: {fileID: 1102281661}
 --- !u!1 &1137732023
 GameObject:
   m_ObjectHideFlags: 0
@@ -31324,7 +31312,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startActive: 0
-  key: 32
   cooldown: 0.5
 --- !u!1 &1326220273
 GameObject:
@@ -31339,6 +31326,7 @@ GameObject:
   - component: {fileID: 1326220277}
   - component: {fileID: 1326220276}
   - component: {fileID: 1326220278}
+  - component: {fileID: 1326220279}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -31462,6 +31450,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 8
+--- !u!114 &1326220279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1326220273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bc30c4f83cc2df4eb71999ec123e7b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1646894741
 GameObject:
   m_ObjectHideFlags: 0
@@ -61940,7 +61940,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startActive: 1
-  key: 32
   cooldown: 0.5
 --- !u!114 &1755686901
 MonoBehaviour:

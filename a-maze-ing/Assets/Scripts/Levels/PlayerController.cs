@@ -24,18 +24,19 @@ public class PlayerController : MonoBehaviour
         //get { return Input.GetAxis("Horizontal"); }
         get
         {
-            float x = Input.GetAxis("Horizontal");
+            float x = Input.GetAxisRaw("Horizontal");
             if (x != 0) 
                 return x < 0 ? -1 : 1;
             else return 0;
         }
     }
+
     float VerticalInput
     {
         //get { return Input.GetAxis("Vertical"); }
         get
         {
-            float y = Input.GetAxis("Vertical");
+            float y = Input.GetAxisRaw("Vertical");
             if (y != 0)
                 return y < 0 ? -1 : 1;
             else return 0;

@@ -23,7 +23,7 @@ public class GameManager : MonoBehaviour
         }
 
         next = (KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("next", "F"));
-        next = (KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("change", "Mouse0"));
+        change = (KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("change", "Space"));
 
     }
     //https://www.youtube.com/watch?v=iSxifRKQKAA
