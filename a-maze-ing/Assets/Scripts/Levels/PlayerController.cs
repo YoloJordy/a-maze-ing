@@ -7,21 +7,26 @@ public class PlayerController : MonoBehaviour
     Rigidbody2D body;
 
     [SerializeField] float speed = 1;
+    Animator animator;
 
     void Start()
     {
         body = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
     }
     
     void Update()
     {
-        //body.AddForce(new Vector2(HorizontalInput * speed, VerticalInput * speed));
+        //move player
         body.velocity = new Vector2(HorizontalInput * speed, VerticalInput * speed);
+        //set rotation
+        transform.eulerAngles = new Vector3(0, 0, Vector2.SignedAngle(Vector2.right, body.velocity));
+        //activates animation
+        if (animator != null) animator.SetBool("IsWalking", body.velocity.sqrMagnitude != 0);
     }
 
     float HorizontalInput
-    {
-        //get { return Input.GetAxis("Horizontal"); }
+    { 
         get
         {
             float x = Input.GetAxisRaw("Horizontal");
@@ -33,7 +38,6 @@ public class PlayerController : MonoBehaviour
 
     float VerticalInput
     {
-        //get { return Input.GetAxis("Vertical"); }
         get
         {
             float y = Input.GetAxisRaw("Vertical");
