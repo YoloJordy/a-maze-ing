@@ -620,7 +620,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -150}
+  m_AnchoredPosition: {x: 0, y: -100}
   m_SizeDelta: {x: 400, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &726870660
@@ -1278,6 +1278,7 @@ GameObject:
   - component: {fileID: 1599409314}
   - component: {fileID: 1599409313}
   - component: {fileID: 1599409312}
+  - component: {fileID: 1599409315}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1350,6 +1351,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1599409315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1599409311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bc30c4f83cc2df4eb71999ec123e7b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1826390479 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6995606656396715724, guid: 563d0c579ebabc14caeec4da026b5376, type: 3}
@@ -1384,7 +1397,6 @@ GameObject:
   - component: {fileID: 1839740978}
   - component: {fileID: 1839740977}
   - component: {fileID: 1839740981}
-  - component: {fileID: 1839740982}
   - component: {fileID: 1839740983}
   m_Layer: 5
   m_Name: Canvas
@@ -1489,18 +1501,6 @@ MonoBehaviour:
   image: {fileID: 1826390481}
   timeToFade: 3
   buttonPressed: 0
---- !u!114 &1839740982
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1839740976}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8bc30c4f83cc2df4eb71999ec123e7b2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1839740983
 MonoBehaviour:
   m_ObjectHideFlags: 0
