@@ -12,19 +12,33 @@ public class PlayerController : MonoBehaviour
     {
         body = GetComponent<Rigidbody2D>();
     }
-
+    
     void Update()
     {
         //body.AddForce(new Vector2(HorizontalInput * speed, VerticalInput * speed));
-        //body.velocity = 
+        body.velocity = new Vector2(HorizontalInput * speed, VerticalInput * speed);
     }
 
     float HorizontalInput
     {
-        get { return Input.GetAxis("Horizontal"); }
+        //get { return Input.GetAxis("Horizontal"); }
+        get
+        {
+            float x = Input.GetAxis("Horizontal");
+            if (x != 0) 
+                return x < 0 ? -1 : 1;
+            else return 0;
+        }
     }
     float VerticalInput
     {
-        get { return Input.GetAxis("Vertical"); }
+        //get { return Input.GetAxis("Vertical"); }
+        get
+        {
+            float y = Input.GetAxis("Vertical");
+            if (y != 0)
+                return y < 0 ? -1 : 1;
+            else return 0;
+        }
     }
 }
