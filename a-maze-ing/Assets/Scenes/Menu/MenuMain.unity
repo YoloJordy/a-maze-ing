@@ -418,7 +418,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 262898192}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
         m_MethodName: NextScene
         m_Mode: 4
@@ -1385,6 +1385,7 @@ GameObject:
   - component: {fileID: 1839740977}
   - component: {fileID: 1839740981}
   - component: {fileID: 1839740982}
+  - component: {fileID: 1839740983}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1500,6 +1501,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bc30c4f83cc2df4eb71999ec123e7b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1839740983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1839740976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec992745576cfe64ba76edd03c5ffa44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &6995606657795286787
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1513,7 +1526,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6995606656396715724, guid: 563d0c579ebabc14caeec4da026b5376, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6995606656396715731, guid: 563d0c579ebabc14caeec4da026b5376, type: 3}
       propertyPath: m_Pivot.x

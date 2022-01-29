@@ -17,7 +17,7 @@ public class SceneLoader : MonoBehaviour
         Invoke("Loading", time);
     }
 
-    private void Loading() 
+    private void Loading()
     {
         SceneManager.LoadScene(sceneName);
     }

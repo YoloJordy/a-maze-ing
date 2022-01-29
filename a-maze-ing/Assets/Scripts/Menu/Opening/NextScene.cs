@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 public class NextScene : MonoBehaviour
 {
     [SerializeField] string sceneName;
-    [SerializeField] int index;
     [SerializeField] float time;
 
     // Update is called once per frame
@@ -14,16 +13,12 @@ public class NextScene : MonoBehaviour
     {
         if (Input.GetKeyDown(GameManager.GM.next)) 
         {
-            Loading();
-            //Invoke("Loading", time);
+            Invoke("Loading", time);
         }
     }
 
     private void Loading()
     {
-        Debug.Log(SceneManager.GetActiveScene().name);
-        //SceneManager.SetActiveScene(SceneManager.GetSceneByName(sceneName));
-        SceneManager.LoadScene(1, LoadSceneMode.Single);
-        Debug.Log(SceneManager.GetActiveScene().name);
+        SceneManager.LoadScene(sceneName);
     }
 }

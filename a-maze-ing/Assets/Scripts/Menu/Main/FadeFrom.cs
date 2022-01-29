@@ -24,7 +24,7 @@ public class FadeFrom : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(GameManager.GM.next) || buttonPressed)
+        if ((Input.GetKeyDown(GameManager.GM.next) || buttonPressed) && !done)
         {
             timer.start = true;
             buttonPressed = false;
@@ -37,12 +37,6 @@ public class FadeFrom : MonoBehaviour
             image.color = new Color(1, 1, 1, alpha);
             done = true;
         }
-
-        if (timer.finish && done) 
-        {
-            this.enabled = false;
-        }
-
         timer.Update();
     }
 }
