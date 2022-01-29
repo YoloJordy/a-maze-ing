@@ -37,6 +37,7 @@ public class FadeFrom : MonoBehaviour
             image.color = new Color(1, 1, 1, alpha);
             done = true;
         }
+
         timer.Update();
     }
 }
