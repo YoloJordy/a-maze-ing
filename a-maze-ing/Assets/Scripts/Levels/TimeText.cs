@@ -13,6 +13,10 @@ public class TimeText : MonoBehaviour
     {
         minutes = (int)(Time.timeSinceLevelLoad / 60f);
         seconds = Mathf.Round(Time.timeSinceLevelLoad - (minutes * 60));
-        text.text = "Time: " + minutes.ToString("F0") + ":" + seconds.ToString("F0");
+        if (seconds > 59f)
+        {
+            text.text = (minutes + 1).ToString("F0") + ":0";
+        }
+        else { text.text = minutes.ToString("F0") + ":" + seconds.ToString("F0"); }
     }
 }
