@@ -17,14 +17,16 @@ public class PlayerController : MonoBehaviour
     
     void Update()
     {
+        //move player
         body.velocity = new Vector2(HorizontalInput * speed, VerticalInput * speed);
-
+        //set rotation
+        transform.eulerAngles = new Vector3(0, 0, Vector2.SignedAngle(Vector2.right, body.velocity));
+        //activates animation
         if (animator != null) animator.SetBool("IsWalking", body.velocity.sqrMagnitude != 0);
     }
 
     float HorizontalInput
-    {
-        //get { return Input.GetAxis("Horizontal"); }
+    { 
         get
         {
             float x = Input.GetAxis("Horizontal");
@@ -35,7 +37,6 @@ public class PlayerController : MonoBehaviour
     }
     float VerticalInput
     {
-        //get { return Input.GetAxis("Vertical"); }
         get
         {
             float y = Input.GetAxis("Vertical");
