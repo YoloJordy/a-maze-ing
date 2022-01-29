@@ -313,8 +313,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1326220273}
-  minConstraints: {x: 13.3, y: -7}
-  maxConstraints: {x: 39.7, y: -46}
+  maxConstraints: {x: 39.7, y: -7}
+  minConstraints: {x: 13.3, y: -46}
 --- !u!1 &1137732023
 GameObject:
   m_ObjectHideFlags: 0
@@ -30789,6 +30789,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startActive: 0
   key: 32
+  cooldown: 0.5
 --- !u!1 &1326220273
 GameObject:
   m_ObjectHideFlags: 0
@@ -61404,3 +61405,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startActive: 1
   key: 32
+  cooldown: 0.5
