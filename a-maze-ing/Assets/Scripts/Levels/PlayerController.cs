@@ -20,7 +20,7 @@ public class PlayerController : MonoBehaviour
         //move player
         body.velocity = new Vector2(HorizontalInput * speed, VerticalInput * speed);
         //set rotation
-        transform.eulerAngles = new Vector3(0, 0, Vector2.SignedAngle(Vector2.right, body.velocity));
+        if (body.velocity.sqrMagnitude != 0) transform.eulerAngles = new Vector3(0, 0, Vector2.SignedAngle(Vector2.right, body.velocity));
         //activates animation
         if (animator != null) animator.SetBool("IsWalking", body.velocity.sqrMagnitude != 0);
     }
