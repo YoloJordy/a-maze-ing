@@ -32,6 +32,7 @@ public class FadeFrom : MonoBehaviour
 
         if (timer.start)
         {
+            Debug.Log("check");
             alpha -= (Time.deltaTime / timeToFade);
             image.color = new Color(1, 1, 1, alpha);
             done = true;
