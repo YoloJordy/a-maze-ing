@@ -27,7 +27,7 @@ public class EnableTileMap : MonoBehaviour
     {
         if (cooldownTimer > 0) cooldownTimer -= Time.deltaTime;
 
-        if (cooldownTimer <= 0 && Input.GetKeyDown(GameManager.GM.change)) EnableComponents(!isEnabled);
+        if (cooldownTimer <= 0 && Input.GetKeyDown(GameManager.GM.change) && Time.timeScale != 0) EnableComponents(!isEnabled);
     }
 
     void EnableComponents(bool value)
