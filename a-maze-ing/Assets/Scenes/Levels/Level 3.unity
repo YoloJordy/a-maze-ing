@@ -553,6 +553,10 @@ PrefabInstance:
       propertyPath: image
       value: 
       objectReference: {fileID: 1312654798}
+    - target: {fileID: 5678720927411613893, guid: 28fa4998e4a2a564da2ff92c88aa4b97, type: 3}
+      propertyPath: timeToFade
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 6635187985482983343, guid: 28fa4998e4a2a564da2ff92c88aa4b97, type: 3}
       propertyPath: nextScene
       value: End

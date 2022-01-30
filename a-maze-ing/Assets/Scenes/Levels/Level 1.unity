@@ -10519,9 +10519,9 @@ GameObject:
   - component: {fileID: 1523154076}
   - component: {fileID: 1523154075}
   - component: {fileID: 1523154074}
-  - component: {fileID: 1523154073}
   - component: {fileID: 1523154080}
   - component: {fileID: 1523154081}
+  - component: {fileID: 1523154073}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -10536,7 +10536,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1523154072}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 85633c92f3859634cbb7449dcba67188, type: 3}
   m_Name: 
@@ -10777,6 +10777,10 @@ PrefabInstance:
       propertyPath: image
       value: 
       objectReference: {fileID: 928923063}
+    - target: {fileID: 5678720927411613893, guid: 28fa4998e4a2a564da2ff92c88aa4b97, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6635187985482983343, guid: 28fa4998e4a2a564da2ff92c88aa4b97, type: 3}
       propertyPath: nextScene
       value: Level 2

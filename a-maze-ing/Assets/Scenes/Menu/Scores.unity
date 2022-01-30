@@ -955,7 +955,7 @@ GameObject:
   - component: {fileID: 1033824604}
   - component: {fileID: 1033824603}
   - component: {fileID: 1033824602}
-  - component: {fileID: 1033824601}
+  - component: {fileID: 1033824607}
   - component: {fileID: 1033824600}
   - component: {fileID: 1033824599}
   - component: {fileID: 1033824598}
@@ -1009,21 +1009,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneName: MenuMain
   time: 3
---- !u!114 &1033824601
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1033824597}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 85633c92f3859634cbb7449dcba67188, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  image: {fileID: 1394156152}
-  timeToFade: 3
-  buttonPressed: 0
 --- !u!114 &1033824602
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1202,6 +1187,21 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1033824607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1033824597}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 913e5a6cdcbf3a243afcef2ede431dad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 1394156152}
+  timeToFade: 3
+  buttonPressed: 0
 --- !u!1 &1310732536
 GameObject:
   m_ObjectHideFlags: 0
@@ -1217,6 +1217,7 @@ GameObject:
   - component: {fileID: 1310732540}
   - component: {fileID: 1310732539}
   - component: {fileID: 1310732538}
+  - component: {fileID: 1310732544}
   m_Layer: 5
   m_Name: Back
   m_TagString: Button
@@ -1379,6 +1380,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1310732536}
   m_CullTransparentMesh: 1
+--- !u!114 &1310732544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1310732536}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfabb0440166ab443bba8876756fdfa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0.58431375, g: 0.38039216, b: 0.99607843, a: 1}
+  m_EffectDistance: {x: 1, y: -3}
+  m_UseGraphicAlpha: 1
 --- !u!1 &1394156150
 GameObject:
   m_ObjectHideFlags: 0
