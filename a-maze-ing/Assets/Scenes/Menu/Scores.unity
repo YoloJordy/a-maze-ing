@@ -644,7 +644,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Scores
+  m_text: Back
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b40093e166acd7545be32ec3c26e52fb, type: 2}
   m_sharedMaterial: {fileID: 6772459377440282059, guid: b40093e166acd7545be32ec3c26e52fb, type: 2}
@@ -807,6 +807,7 @@ GameObject:
   - component: {fileID: 1031157083}
   - component: {fileID: 1031157085}
   - component: {fileID: 1031157084}
+  - component: {fileID: 1031157086}
   m_Layer: 5
   m_Name: Scores
   m_TagString: Untagged
@@ -853,7 +854,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: "Level 1: \nLevel 2:\nLevel 3:\nTotal Play Time: "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b40093e166acd7545be32ec3c26e52fb, type: 2}
   m_sharedMaterial: {fileID: 6772459377440282059, guid: b40093e166acd7545be32ec3c26e52fb, type: 2}
@@ -892,7 +893,7 @@ MonoBehaviour:
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: 0
+  m_lineSpacing: 100
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
@@ -930,6 +931,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1031157082}
   m_CullTransparentMesh: 1
+--- !u!114 &1031157086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1031157082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e52fe814b667ca4393dad04e80d0013, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1033824597
 GameObject:
   m_ObjectHideFlags: 0
@@ -1205,7 +1218,7 @@ GameObject:
   - component: {fileID: 1310732539}
   - component: {fileID: 1310732538}
   m_Layer: 5
-  m_Name: Scores
+  m_Name: Back
   m_TagString: Button
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
