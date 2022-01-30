@@ -7,6 +7,11 @@ public class CameraController : MonoBehaviour
     [SerializeField] GameObject player;
     [SerializeField] Vector2 maxConstraints, minConstraints;
 
+    //private void Start()
+    //{
+    //    transform.position = new Vector3(minConstraints.x, maxConstraints.y, -5f);
+    //}
+
     void Update()
     {
         //y-Axis movement

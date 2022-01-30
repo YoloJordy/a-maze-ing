@@ -136,7 +136,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6995606656396715724, guid: 563d0c579ebabc14caeec4da026b5376, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6995606656396715731, guid: 563d0c579ebabc14caeec4da026b5376, type: 3}
       propertyPath: m_Pivot.x
@@ -234,12 +234,17 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6995606656396715730, guid: 563d0c579ebabc14caeec4da026b5376, type: 3}
   m_PrefabInstance: {fileID: 105361969}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 105361972}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &105361972 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6995606656396715724, guid: 563d0c579ebabc14caeec4da026b5376, type: 3}
+  m_PrefabInstance: {fileID: 105361969}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &224996713
 GameObject:
   m_ObjectHideFlags: 0
@@ -835,6 +840,7 @@ GameObject:
   - component: {fileID: 1102281660}
   - component: {fileID: 1102281662}
   - component: {fileID: 1102281661}
+  - component: {fileID: 1102281663}
   m_Layer: 5
   m_Name: Time
   m_TagString: Untagged
@@ -958,6 +964,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1102281659}
   m_CullTransparentMesh: 1
+--- !u!114 &1102281663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1102281659}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54ba2c01c2f421f45a1c19d3d5831af1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: {fileID: 1102281661}
 --- !u!1 &1440993396
 GameObject:
   m_ObjectHideFlags: 0
@@ -10598,10 +10617,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5678720927411613893, guid: 28fa4998e4a2a564da2ff92c88aa4b97, type: 3}
+      propertyPath: image
+      value: 
+      objectReference: {fileID: 105361971}
     - target: {fileID: 6635187985482983343, guid: 28fa4998e4a2a564da2ff92c88aa4b97, type: 3}
       propertyPath: nextScene
       value: Level 2
       objectReference: {fileID: 0}
+    - target: {fileID: 6635187985482983343, guid: 28fa4998e4a2a564da2ff92c88aa4b97, type: 3}
+      propertyPath: screenFader
+      value: 
+      objectReference: {fileID: 105361972}
     - target: {fileID: 6635187985630941969, guid: 28fa4998e4a2a564da2ff92c88aa4b97, type: 3}
       propertyPath: m_Name
       value: Teleporter

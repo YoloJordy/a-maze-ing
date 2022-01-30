@@ -198,7 +198,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6995606656396715724, guid: 563d0c579ebabc14caeec4da026b5376, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6995606656396715731, guid: 563d0c579ebabc14caeec4da026b5376, type: 3}
       propertyPath: m_Pivot.x
@@ -291,7 +291,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6995606656396715730, guid: 563d0c579ebabc14caeec4da026b5376, type: 3}
   m_PrefabInstance: {fileID: 377493057}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 377493060}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
@@ -300,6 +300,11 @@ MonoBehaviour:
 --- !u!224 &377493059 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6995606656396715731, guid: 563d0c579ebabc14caeec4da026b5376, type: 3}
+  m_PrefabInstance: {fileID: 377493057}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &377493060 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6995606656396715724, guid: 563d0c579ebabc14caeec4da026b5376, type: 3}
   m_PrefabInstance: {fileID: 377493057}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &395035799
@@ -61838,10 +61843,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5678720927411613893, guid: 28fa4998e4a2a564da2ff92c88aa4b97, type: 3}
+      propertyPath: image
+      value: 
+      objectReference: {fileID: 377493058}
     - target: {fileID: 6635187985482983343, guid: 28fa4998e4a2a564da2ff92c88aa4b97, type: 3}
       propertyPath: nextScene
       value: Level 3
       objectReference: {fileID: 0}
+    - target: {fileID: 6635187985482983343, guid: 28fa4998e4a2a564da2ff92c88aa4b97, type: 3}
+      propertyPath: screenFader
+      value: 
+      objectReference: {fileID: 377493060}
     - target: {fileID: 6635187985630941969, guid: 28fa4998e4a2a564da2ff92c88aa4b97, type: 3}
       propertyPath: m_Name
       value: Teleporter

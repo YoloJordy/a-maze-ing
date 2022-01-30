@@ -234,12 +234,17 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6995606656396715730, guid: 563d0c579ebabc14caeec4da026b5376, type: 3}
   m_PrefabInstance: {fileID: 105361969}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 105361972}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &105361972 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6995606656396715724, guid: 563d0c579ebabc14caeec4da026b5376, type: 3}
+  m_PrefabInstance: {fileID: 105361969}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &224996713
 GameObject:
   m_ObjectHideFlags: 0
@@ -742,10 +747,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5678720927411613893, guid: 28fa4998e4a2a564da2ff92c88aa4b97, type: 3}
+      propertyPath: image
+      value: 
+      objectReference: {fileID: 105361971}
     - target: {fileID: 6635187985482983343, guid: 28fa4998e4a2a564da2ff92c88aa4b97, type: 3}
       propertyPath: nextScene
       value: End
       objectReference: {fileID: 0}
+    - target: {fileID: 6635187985482983343, guid: 28fa4998e4a2a564da2ff92c88aa4b97, type: 3}
+      propertyPath: screenFader
+      value: 
+      objectReference: {fileID: 105361972}
     - target: {fileID: 6635187985630941969, guid: 28fa4998e4a2a564da2ff92c88aa4b97, type: 3}
       propertyPath: m_Name
       value: Teleporter
