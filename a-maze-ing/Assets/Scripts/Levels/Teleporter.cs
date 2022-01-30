@@ -9,13 +9,36 @@ public class Teleporter : MonoBehaviour
     [SerializeField] float time;
     [SerializeField] string nextScene;
     public GameObject screenFader;
+    SaveFileHandler fileHandler;
+
+    private void Start()
+    {
+        fileHandler = GetComponent<SaveFileHandler>();
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.name == "Player") 
         {
+            SendSaveData();
             FaderOn();
             Invoke("loadNextScene", time);
+        }
+    }
+
+    void SendSaveData()
+    {
+        float time = Time.timeSinceLevelLoad;
+
+        //gets what level is currently loaded
+        string sceneName = SceneManager.GetActiveScene().name;
+        char[] level = new char[1];
+        sceneName.CopyTo(sceneName.Length - 1, level, 0, 1);
+        Debug.Log(level[0]);
+        if (char.IsNumber(level[0]))
+        {
+            //sends data to file
+            fileHandler.SaveTimeData(level[0], time);
         }
     }
 
