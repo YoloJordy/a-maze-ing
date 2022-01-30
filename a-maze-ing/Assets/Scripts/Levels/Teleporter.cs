@@ -34,11 +34,13 @@ public class Teleporter : MonoBehaviour
         string sceneName = SceneManager.GetActiveScene().name;
         char[] level = new char[1];
         sceneName.CopyTo(sceneName.Length - 1, level, 0, 1);
-        Debug.Log(level[0]);
         if (char.IsNumber(level[0]))
         {
+            //makes char into int
+            int levelNumber = int.Parse(level[0].ToString());
+
             //sends data to file
-            fileHandler.SaveTimeData(level[0], time);
+            fileHandler.SaveTimeData(levelNumber, time);
         }
     }
 

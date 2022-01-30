@@ -19,7 +19,6 @@ public class SaveFileHandler : MonoBehaviour
         SaveData saveData = JsonUtility.FromJson<SaveData>(json);
 
         saveData.totalPlayTime += time;
-
         switch (level)
         {
             case 1:
@@ -31,7 +30,7 @@ public class SaveFileHandler : MonoBehaviour
             case 3:
                 if (time > saveData.bestTimeL3) saveData.bestTimeL3 = time;
                 break;
-        }
+        }       
 
         json = JsonUtility.ToJson(saveData);
         File.WriteAllText(Application.dataPath + "/SaveFiles/saveFile.json", json);
