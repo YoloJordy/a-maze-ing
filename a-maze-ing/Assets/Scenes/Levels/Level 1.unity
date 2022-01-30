@@ -920,7 +920,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startActive: 0
-  cooldown: 0.5
 --- !u!19719996 &1440993399
 TilemapCollider2D:
   m_ObjectHideFlags: 0
@@ -10542,7 +10541,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   image: {fileID: 928923063}
-  timeToFade: 3
+  timeToFade: 1
   buttonPressed: 0
 --- !u!114 &1523154074
 MonoBehaviour:
@@ -10560,7 +10559,7 @@ MonoBehaviour:
   pauseMenuUI: {fileID: 2129975599}
   screenFader: {fileID: 928923064}
   firstSelected: {fileID: 2129975597}
-  time: 3
+  time: 1
 --- !u!114 &1523154075
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10597,7 +10596,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   image: {fileID: 928923063}
-  timeToFade: 3
+  timeToFade: 1
   buttonPressed: 0
 --- !u!114 &1523154077
 MonoBehaviour:
@@ -10680,7 +10679,7 @@ PrefabInstance:
     - target: {fileID: 5678720927411613893, guid: 28fa4998e4a2a564da2ff92c88aa4b97, type: 3}
       propertyPath: image
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 928923063}
     - target: {fileID: 6635187985482983343, guid: 28fa4998e4a2a564da2ff92c88aa4b97, type: 3}
       propertyPath: nextScene
       value: Level 2
@@ -10688,7 +10687,7 @@ PrefabInstance:
     - target: {fileID: 6635187985482983343, guid: 28fa4998e4a2a564da2ff92c88aa4b97, type: 3}
       propertyPath: screenFader
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 928923064}
     - target: {fileID: 6635187985630941969, guid: 28fa4998e4a2a564da2ff92c88aa4b97, type: 3}
       propertyPath: m_Name
       value: Teleporter
@@ -10786,7 +10785,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startActive: 1
-  cooldown: 0.5
 --- !u!19719996 &1641060559
 TilemapCollider2D:
   m_ObjectHideFlags: 0

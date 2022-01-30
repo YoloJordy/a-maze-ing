@@ -7,7 +7,7 @@ public class EnableTileMap : MonoBehaviour
 {
     [SerializeField] bool startActive;
     //[SerializeField] KeyCode key = KeyCode.Space;
-    [SerializeField] float cooldown = 1;
+    static float cooldown = 0.5f;
     float cooldownTimer;
 
     TilemapRenderer tilemapRenderer;

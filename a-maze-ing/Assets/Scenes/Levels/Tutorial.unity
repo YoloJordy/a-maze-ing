@@ -1002,7 +1002,7 @@ MonoBehaviour:
   pauseMenuUI: {fileID: 68808749}
   screenFader: {fileID: 1380272474}
   firstSelected: {fileID: 845537393}
-  time: 3
+  time: 1
 --- !u!114 &917134002
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1016,7 +1016,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   image: {fileID: 105361971}
-  timeToFade: 3
+  timeToFade: 1
   buttonPressed: 0
 --- !u!1 &1137732023
 GameObject:
@@ -7117,7 +7117,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startActive: 0
-  cooldown: 0.5
 --- !u!1 &1326220273 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5966882083562807094, guid: 2c86ccb063507ca49a8822bd1fca6617, type: 3}
@@ -13226,7 +13225,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startActive: 1
-  cooldown: 0.5
 --- !u!1001 &2836836716198351075
 PrefabInstance:
   m_ObjectHideFlags: 0
