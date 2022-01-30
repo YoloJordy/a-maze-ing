@@ -15,7 +15,7 @@ public class SaveFileHandler : MonoBehaviour
 {
     public static void SaveTimeData(int level, float time)
     {
-        string json = File.ReadAllText(Application.dataPath + "/SaveFiles/saveFile.json");
+        string json = File.ReadAllText(Application.dataPath + "/StreamingAssets/saveFile.json");
         SaveData saveData = JsonUtility.FromJson<SaveData>(json);
 
         saveData.totalPlayTime += time;
@@ -33,12 +33,12 @@ public class SaveFileHandler : MonoBehaviour
         }       
 
         json = JsonUtility.ToJson(saveData);
-        File.WriteAllText(Application.dataPath + "/SaveFiles/saveFile.json", json);
+        File.WriteAllText(Application.dataPath + "/StreamingAssets/saveFile.json", json);
     }
 
     public static SaveData LoadData()
     {
-        string json = File.ReadAllText(Application.dataPath + "/SaveFiles/saveFile.json");
+        string json = File.ReadAllText(Application.dataPath + "/StreamingAssets/saveFile.json");
         SaveData saveData = JsonUtility.FromJson<SaveData>(json);
 
         return saveData;

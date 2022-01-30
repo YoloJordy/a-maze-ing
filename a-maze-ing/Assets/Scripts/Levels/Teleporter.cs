@@ -32,7 +32,7 @@ public class Teleporter : MonoBehaviour
         {
             //makes char into int
             int levelNumber = int.Parse(level[0].ToString());
-
+        
             //sends data to file
             SaveFileHandler.SaveTimeData(levelNumber, time);
         }
