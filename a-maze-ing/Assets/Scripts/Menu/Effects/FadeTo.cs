@@ -26,6 +26,7 @@ public class FadeTo : MonoBehaviour
         if ((Input.GetKeyDown(GameManager.GM.next) || buttonPressed) && !done)
         {
             timer.start = true;
+            alpha = 0f;
             buttonPressed = false;
         }
 

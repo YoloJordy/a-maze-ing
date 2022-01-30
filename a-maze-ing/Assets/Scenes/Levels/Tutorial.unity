@@ -270,7 +270,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6995606656396715724, guid: 563d0c579ebabc14caeec4da026b5376, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6995606656396715731, guid: 563d0c579ebabc14caeec4da026b5376, type: 3}
       propertyPath: m_Pivot.x
@@ -368,7 +368,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6995606656396715730, guid: 563d0c579ebabc14caeec4da026b5376, type: 3}
   m_PrefabInstance: {fileID: 105361969}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1380272474}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
@@ -7190,6 +7190,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5966882083562807094, guid: 2c86ccb063507ca49a8822bd1fca6617, type: 3}
   m_PrefabInstance: {fileID: 5966882084385184967}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1380272474 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6995606656396715724, guid: 563d0c579ebabc14caeec4da026b5376, type: 3}
+  m_PrefabInstance: {fileID: 105361969}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1646894741
 GameObject:
   m_ObjectHideFlags: 0
@@ -13353,6 +13358,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6635187985482983343, guid: 28fa4998e4a2a564da2ff92c88aa4b97, type: 3}
+      propertyPath: time
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6635187985482983343, guid: 28fa4998e4a2a564da2ff92c88aa4b97, type: 3}
+      propertyPath: nextScene
+      value: Level 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6635187985482983343, guid: 28fa4998e4a2a564da2ff92c88aa4b97, type: 3}
+      propertyPath: screenFader
+      value: 
+      objectReference: {fileID: 1380272474}
     - target: {fileID: 6635187985630941969, guid: 28fa4998e4a2a564da2ff92c88aa4b97, type: 3}
       propertyPath: m_Name
       value: Teleporter
@@ -13403,3 +13420,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28fa4998e4a2a564da2ff92c88aa4b97, type: 3}
+--- !u!1 &6635187983727362139 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6635187985630941969, guid: 28fa4998e4a2a564da2ff92c88aa4b97, type: 3}
+  m_PrefabInstance: {fileID: 6635187983727362138}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6635187983727362140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6635187983727362139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85633c92f3859634cbb7449dcba67188, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 105361971}
+  timeToFade: 1
+  buttonPressed: 0
