@@ -9,12 +9,6 @@ public class Teleporter : MonoBehaviour
     [SerializeField] float time;
     [SerializeField] string nextScene;
     public GameObject screenFader;
-    SaveFileHandler fileHandler;
-
-    private void Start()
-    {
-        fileHandler = GetComponent<SaveFileHandler>();
-    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -40,7 +34,7 @@ public class Teleporter : MonoBehaviour
             int levelNumber = int.Parse(level[0].ToString());
 
             //sends data to file
-            fileHandler.SaveTimeData(levelNumber, time);
+            SaveFileHandler.SaveTimeData(levelNumber, time);
         }
     }
 
